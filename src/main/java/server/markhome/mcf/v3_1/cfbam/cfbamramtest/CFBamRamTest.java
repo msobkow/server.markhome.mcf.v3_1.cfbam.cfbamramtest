@@ -2,7 +2,7 @@
 // Description: Java 25 Main for testing the CFBam schema instance creation
 
 /*
- *	io.github.msobkow.CFBam
+ *	server.markhome.mcf.CFBam
  *
  *	Copyright (c) 2016-2026 Mark Stephen Sobkow
  *	
@@ -33,7 +33,7 @@
  *	
  */
 
-package io.github.msobkow.v3_1.cfbam.cfbamramtest;
+package server.markhome.mcf.v3_1.cfbam.cfbamramtest;
 
 import java.lang.reflect.*;
 import java.io.File;
@@ -56,23 +56,23 @@ import org.springframework.core.env.ConfigurableEnvironment;
 
 import org.apache.commons.codec.binary.Base64;
 import org.apache.commons.text.StringEscapeUtils;
-import io.github.msobkow.v3_1.cflib.*;
-import io.github.msobkow.v3_1.cflib.inz.Inz;
-import io.github.msobkow.v3_1.cflib.inz.InzPathEntry;
-import io.github.msobkow.v3_1.cflib.dbutil.*;
-import io.github.msobkow.v3_1.cfsec.cfsec.*;
-import io.github.msobkow.v3_1.cfint.cfint.*;
-import io.github.msobkow.v3_1.cfbam.cfbam.*;
-import io.github.msobkow.v3_1.cfsec.cfsec.buff.*;
-import io.github.msobkow.v3_1.cfint.cfint.buff.*;
-import io.github.msobkow.v3_1.cfbam.cfbam.buff.*;
-import io.github.msobkow.v3_1.cfsec.cfsecram.*;
-import io.github.msobkow.v3_1.cfint.cfintram.*;
-import io.github.msobkow.v3_1.cfbam.cfbamram.*;
+import server.markhome.mcf.v3_1.cflib.*;
+import server.markhome.mcf.v3_1.cflib.inz.Inz;
+import server.markhome.mcf.v3_1.cflib.inz.InzPathEntry;
+import server.markhome.mcf.v3_1.cflib.dbutil.*;
+import server.markhome.mcf.v3_1.cfsec.cfsec.*;
+import server.markhome.mcf.v3_1.cfint.cfint.*;
+import server.markhome.mcf.v3_1.cfbam.cfbam.*;
+import server.markhome.mcf.v3_1.cfsec.cfsec.buff.*;
+import server.markhome.mcf.v3_1.cfint.cfint.buff.*;
+import server.markhome.mcf.v3_1.cfbam.cfbam.buff.*;
+import server.markhome.mcf.v3_1.cfsec.cfsecram.*;
+import server.markhome.mcf.v3_1.cfint.cfintram.*;
+import server.markhome.mcf.v3_1.cfbam.cfbamram.*;
 
 @SpringBootApplication
 @ComponentScan(basePackages = {
-    "io.github.msobkow.v3_1.cfbam.cfbamramtest.spring"   // if you have service beans here
+    "server.markhome.mcf.v3_1.cfbam.cfbamramtest.spring"   // if you have service beans here
 })
 @EnableAutoConfiguration(exclude = {
 })
@@ -194,7 +194,7 @@ public class CFBamRamTest
     }
 
     public static void main(String[] args) {
-        Inz.addPathEntry(new InzPathEntry("/opt/mcf/v3_1/java" + "/io.github.msobkow.v3_1.cfbam.cfbamramtest/src/main/resources/" + "/io.github.msobkow.v3_1.cfbam.cfbamramtest".replace(".","/") + "/langs"));
+        Inz.addPathEntry(new InzPathEntry("/opt/mcf/v3_1/java" + "/server.markhome.mcf.v3_1.cfbam.cfbamramtest/src/main/resources/" + "/server.markhome.mcf.v3_1.cfbam.cfbamramtest".replace(".","/") + "/langs"));
 
         // This weird looking cadence ensures that all the sub-property lists are prepared before getMergedProperties() is invoked, ensuring that any errors and exceptions along the way are thrown first and in predictable order
         Properties mergedProperties = getApplicationProperties();

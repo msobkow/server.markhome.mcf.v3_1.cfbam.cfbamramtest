@@ -2,7 +2,7 @@
 // Description: Spring Ram storage tests for CFBam for the RamTest program
 
 /*
- *	io.github.msobkow.CFBam
+ *	server.markhome.mcf.CFBam
  *
  *	Copyright (c) 2016-2026 Mark Stephen Sobkow
  *	
@@ -33,7 +33,7 @@
  *	
  */
 
-package io.github.msobkow.v3_1.cfbam.cfbamramtest.spring;
+package server.markhome.mcf.v3_1.cfbam.cfbamramtest.spring;
 
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
@@ -50,17 +50,17 @@ import org.springframework.stereotype.Service;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.NoResultException;
 
-import io.github.msobkow.v3_1.cflib.*;
-import io.github.msobkow.v3_1.cflib.dbutil.*;
-import io.github.msobkow.v3_1.cfsec.cfsec.*;
-import io.github.msobkow.v3_1.cfint.cfint.*;
-import io.github.msobkow.v3_1.cfsec.cfsec.buff.*;
-import io.github.msobkow.v3_1.cfint.cfint.buff.*;
-import io.github.msobkow.v3_1.cfsec.cfsecram.*;
-import io.github.msobkow.v3_1.cfint.cfintram.*;
-import io.github.msobkow.v3_1.cfbam.cfbam.*;
-import io.github.msobkow.v3_1.cfbam.cfbam.buff.*;
-import io.github.msobkow.v3_1.cfbam.cfbamram.*;
+import server.markhome.mcf.v3_1.cflib.*;
+import server.markhome.mcf.v3_1.cflib.dbutil.*;
+import server.markhome.mcf.v3_1.cfsec.cfsec.*;
+import server.markhome.mcf.v3_1.cfint.cfint.*;
+import server.markhome.mcf.v3_1.cfsec.cfsec.buff.*;
+import server.markhome.mcf.v3_1.cfint.cfint.buff.*;
+import server.markhome.mcf.v3_1.cfsec.cfsecram.*;
+import server.markhome.mcf.v3_1.cfint.cfintram.*;
+import server.markhome.mcf.v3_1.cfbam.cfbam.*;
+import server.markhome.mcf.v3_1.cfbam.cfbam.buff.*;
+import server.markhome.mcf.v3_1.cfbam.cfbamram.*;
 
 @Service("RamTestCFBam")
 public class CFBamRamTestTestSchema {

@@ -7,11 +7,11 @@
     <version>4.0.0</version>
   </parent>
 
-  <groupId>io.github.msobkow.v3_1</groupId>
-  <artifactId>io.github.msobkow.v3_1.cfbam.cfbamramtest</artifactId>
+  <groupId>server.markhome.mcf.v3_1</groupId>
+  <artifactId>server.markhome.mcf.v3_1.cfbam.cfbamramtest</artifactId>
   <version>3.1.42</version>
-  <name>io.github.msobkow.v3_1.cfbam.cfbamramtest</name>
-  <description>msobkow 3.1.42 CFBam CFBam - RAM Test program to make sure buffer memory storage instantiates</description>
+  <name>server.markhome.mcf.v3_1.cfbam.cfbamramtest</name>
+  <description>mcf 3.1.42 CFBam CFBam - RAM Test program to make sure buffer memory storage instantiates</description>
   <url>mailto:mark.sobkow@gmail.com</url>
 
   <properties>
@@ -33,14 +33,14 @@
 
   <dependencies>
     <dependency>
-      <groupId>io.github.msobkow.v3_1</groupId>
-      <artifactId>io.github.msobkow.v3_1.cflib</artifactId>
-      <version>3.1</version>
+      <groupId>server.markhome.mcf.v3_1</groupId>
+      <artifactId>server.markhome.mcf.v3_1.cflib</artifactId>
+      <version>3.1.42</version>
     </dependency>
     <dependency>
-      <groupId>io.github.msobkow.v3_1</groupId>
-      <artifactId>io.github.msobkow.v3_1.cflib.dbutil</artifactId>
-      <version>3.1</version>
+      <groupId>server.markhome.mcf.v3_1</groupId>
+      <artifactId>server.markhome.mcf.v3_1.cflib.dbutil</artifactId>
+      <version>3.1.42</version>
     </dependency>
     <dependency>
         <groupId>ch.qos.logback</groupId>
@@ -88,48 +88,48 @@
       <artifactId>spring-boot-starter</artifactId>
     </dependency>
     <dependency>
-        <groupId>io.github.msobkow.v3_1</groupId>
-        <artifactId>io.github.msobkow.v3_1.cfsec.cfsec</artifactId>
+        <groupId>server.markhome.mcf.v3_1</groupId>
+        <artifactId>server.markhome.mcf.v3_1.cfsec.cfsec</artifactId>
         <version>3.1.42</version>
     </dependency>
     <dependency>
-        <groupId>io.github.msobkow.v3_1</groupId>
-        <artifactId>io.github.msobkow.v3_1.cfint.cfint</artifactId>
+        <groupId>server.markhome.mcf.v3_1</groupId>
+        <artifactId>server.markhome.mcf.v3_1.cfint.cfint</artifactId>
         <version>3.1.42</version>
     </dependency>
     <dependency>
-        <groupId>io.github.msobkow.v3_1</groupId>
-        <artifactId>io.github.msobkow.v3_1.cfbam.cfbam</artifactId>
+        <groupId>server.markhome.mcf.v3_1</groupId>
+        <artifactId>server.markhome.mcf.v3_1.cfbam.cfbam</artifactId>
         <version>3.1.42</version>
     </dependency>
     <dependency>
-        <groupId>io.github.msobkow.v3_1</groupId>
-        <artifactId>io.github.msobkow.v3_1.cfsec.cfsecbuff</artifactId>
+        <groupId>server.markhome.mcf.v3_1</groupId>
+        <artifactId>server.markhome.mcf.v3_1.cfsec.cfsecbuff</artifactId>
         <version>3.1.42</version>
     </dependency>
     <dependency>
-        <groupId>io.github.msobkow.v3_1</groupId>
-        <artifactId>io.github.msobkow.v3_1.cfint.cfintbuff</artifactId>
+        <groupId>server.markhome.mcf.v3_1</groupId>
+        <artifactId>server.markhome.mcf.v3_1.cfint.cfintbuff</artifactId>
         <version>3.1.42</version>
     </dependency>
     <dependency>
-        <groupId>io.github.msobkow.v3_1</groupId>
-        <artifactId>io.github.msobkow.v3_1.cfbam.cfbambuff</artifactId>
+        <groupId>server.markhome.mcf.v3_1</groupId>
+        <artifactId>server.markhome.mcf.v3_1.cfbam.cfbambuff</artifactId>
         <version>3.1.42</version>
     </dependency>
     <dependency>
-        <groupId>io.github.msobkow.v3_1</groupId>
-        <artifactId>io.github.msobkow.v3_1.cfsec.cfsecram</artifactId>
+        <groupId>server.markhome.mcf.v3_1</groupId>
+        <artifactId>server.markhome.mcf.v3_1.cfsec.cfsecram</artifactId>
         <version>3.1.42</version>
     </dependency>
     <dependency>
-        <groupId>io.github.msobkow.v3_1</groupId>
-        <artifactId>io.github.msobkow.v3_1.cfint.cfintram</artifactId>
+        <groupId>server.markhome.mcf.v3_1</groupId>
+        <artifactId>server.markhome.mcf.v3_1.cfint.cfintram</artifactId>
         <version>3.1.42</version>
     </dependency>
     <dependency>
-        <groupId>io.github.msobkow.v3_1</groupId>
-        <artifactId>io.github.msobkow.v3_1.cfbam.cfbamram</artifactId>
+        <groupId>server.markhome.mcf.v3_1</groupId>
+        <artifactId>server.markhome.mcf.v3_1.cfbam.cfbamram</artifactId>
         <version>3.1.42</version>
     </dependency>
   </dependencies>
@@ -138,12 +138,12 @@
 		<repository>
 			<id>nexus-releases</id>
 			<name>Nexus release repository</name>
-			<url>http://nexus3.msobkow.github.io:8081/repository/msobkow.github.io-hosted/</url>
+			<url>http://nexus3.mcf.markhome.server:8081/repository/mcf.markhome.server-hosted/</url>
 		</repository>
 		<snapshotRepository>
 			<id>nexus-snapshots</id>
 			<name>Nexus release repository</name>
-			<url>http://nexus3.msobkow.github.io:8081/repository/msobkow.github.io-hosted/</url>
+			<url>http://nexus3.mcf.markhome.server:8081/repository/mcf.markhome.server-hosted/</url>
 		</snapshotRepository>
 	</distributionManagement>
 
@@ -179,7 +179,7 @@
 				</executions>
 				<configuration>
 					<serverId>nexus</serverId>
-					<nexusUrl>http://nexus3.msobkow.github.io:8081/repository/msobkow.github.io-hosted/</nexusUrl>
+					<nexusUrl>http://nexus3.mcf.markhome.server:8081/repository/mcf.markhome.server-hosted/</nexusUrl>
 					<skipStaging>true</skipStaging>
 				</configuration>
 			</plugin>
@@ -195,7 +195,7 @@
 						<configuration>
 							<classifier>spring-boot</classifier>
 							<mainClass>
-                            	io.github.msobkow.v3_1.cfbam.cfbamramtest.CFBamRamTest
+                            	server.markhome.mcf.v3_1.cfbam.cfbamramtest.CFBamRamTest
 							</mainClass>
 						</configuration>
 					</execution>

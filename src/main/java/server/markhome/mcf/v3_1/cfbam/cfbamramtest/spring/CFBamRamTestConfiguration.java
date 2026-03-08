@@ -2,7 +2,7 @@
 // Description: Java 25 Configuration of the RamTest application
 
 /*
- *	io.github.msobkow.CFBam
+ *	server.markhome.mcf.CFBam
  *
  *	Copyright (c) 2016-2026 Mark Stephen Sobkow
  *	
@@ -33,12 +33,12 @@
  *	
  */
 
-package io.github.msobkow.v3_1.cfbam.cfbamramtest.spring;
+package server.markhome.mcf.v3_1.cfbam.cfbamramtest.spring;
 
 import java.util.Properties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import io.github.msobkow.v3_1.cfbam.cfbamramtest.CFBamRamTest;
+import server.markhome.mcf.v3_1.cfbam.cfbamramtest.CFBamRamTest;
 
 @Configuration
 public class CFBamRamTestConfiguration {
