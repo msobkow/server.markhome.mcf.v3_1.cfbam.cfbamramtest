@@ -121,6 +121,14 @@ public class CFSecRamTestTestSchema {
 			messages.append("Retrieved " + clusterResults.length + " entities from CFSec.Cluster\n");
 		}
 
+		ICFSecTenant[] tenantResults = ICFSecSchema.getBackingCFSec().getTableTenant().readAllDerived(null);
+		if (tenantResults == null) {
+			messages.append("Erroneously retrieved null for ICFSecSchema.getTenantTable().readAllDerived(null)\n");
+		}
+		else {
+			messages.append("Retrieved " + tenantResults.length + " entities from CFSec.Tenant\n");
+		}
+
 		ICFSecISOCcy[] iSOCcyResults = ICFSecSchema.getBackingCFSec().getTableISOCcy().readAllDerived(null);
 		if (iSOCcyResults == null) {
 			messages.append("Erroneously retrieved null for ICFSecSchema.getISOCcyTable().readAllDerived(null)\n");
@@ -279,14 +287,6 @@ public class CFSecRamTestTestSchema {
 		}
 		else {
 			messages.append("Retrieved " + sysClusterResults.length + " entities from CFSec.SysCluster\n");
-		}
-
-		ICFSecTenant[] tenantResults = ICFSecSchema.getBackingCFSec().getTableTenant().readAllDerived(null);
-		if (tenantResults == null) {
-			messages.append("Erroneously retrieved null for ICFSecSchema.getTenantTable().readAllDerived(null)\n");
-		}
-		else {
-			messages.append("Retrieved " + tenantResults.length + " entities from CFSec.Tenant\n");
 		}
 
 		messages.append("CFSec tests complete\n");
