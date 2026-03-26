@@ -87,7 +87,6 @@ public class CFSecRamTestTestSchema {
 					newuser.setPKey(adminpid);
 					newuser.setRequiredSecUserId( adminpid );
 					newuser.setRequiredRevision( 1 );
-					newuser.setOptionalLookupDefDev((ICFSecSecDevice)null);
 					newuser.setRequiredLoginId( "admin" );
 					newuser.setRequiredEMailAddress("admin@localhost");
 					newuser.setOptionalEMailConfirmUuid6( null );
