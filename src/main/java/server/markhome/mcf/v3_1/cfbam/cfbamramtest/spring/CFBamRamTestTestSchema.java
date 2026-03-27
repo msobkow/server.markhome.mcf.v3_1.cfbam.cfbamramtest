@@ -134,6 +134,30 @@ public class CFBamRamTestTestSchema {
 			messages.append("Retrieved " + tableResults.length + " entities from CFBam.Table\n");
 		}
 
+		ICFBamTweak[] tweakResults = ICFBamSchema.getBackingCFBam().getTableTweak().readAllDerived(null);
+		if (tweakResults == null) {
+			messages.append("Erroneously retrieved null for ICFBamSchema.getTweakTable().readAllDerived(null)\n");
+		}
+		else {
+			messages.append("Retrieved " + tweakResults.length + " entities from CFBam.Tweak\n");
+		}
+
+		ICFBamTableTweak[] tableTweakResults = ICFBamSchema.getBackingCFBam().getTableTableTweak().readAllDerived(null);
+		if (tableTweakResults == null) {
+			messages.append("Erroneously retrieved null for ICFBamSchema.getTableTweakTable().readAllDerived(null)\n");
+		}
+		else {
+			messages.append("Retrieved " + tableTweakResults.length + " entities from CFBam.TableTweak\n");
+		}
+
+		ICFBamSchemaTweak[] schemaTweakResults = ICFBamSchema.getBackingCFBam().getTableSchemaTweak().readAllDerived(null);
+		if (schemaTweakResults == null) {
+			messages.append("Erroneously retrieved null for ICFBamSchema.getSchemaTweakTable().readAllDerived(null)\n");
+		}
+		else {
+			messages.append("Retrieved " + schemaTweakResults.length + " entities from CFBam.SchemaTweak\n");
+		}
+
 		ICFBamValue[] valueResults = ICFBamSchema.getBackingCFBam().getTableValue().readAllDerived(null);
 		if (valueResults == null) {
 			messages.append("Erroneously retrieved null for ICFBamSchema.getValueTable().readAllDerived(null)\n");
