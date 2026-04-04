@@ -89,9 +89,7 @@ public class CFSecRamTestTestSchema {
 					newuser.setRequiredRevision( 1 );
 					newuser.setRequiredLoginId( "admin" );
 					newuser.setRequiredEMailAddress("admin@localhost");
-					newuser.setOptionalEMailConfirmUuid6( null );
-					newuser.setRequiredPasswordHash( computeSHA256("changeoninstall") );
-					newuser.setOptionalPasswordResetUuid6( null );
+					
 					ICFSecSecUser secUserCreated = ICFSecSchema.getBackingCFSec().getTableSecUser().createSecUser(null, newuser);
 					if (secUserCreated == null) {
 						messages.append("Error creating secuser admin - null returned\n");
