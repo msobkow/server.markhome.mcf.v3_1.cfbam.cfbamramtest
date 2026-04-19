@@ -158,6 +158,14 @@ public class CFBamRamTestTestSchema {
 			messages.append("Retrieved " + schemaTweakResults.length + " entities from CFBam.SchemaTweak\n");
 		}
 
+		ICFBamIndexTweak[] indexTweakResults = ICFBamSchema.getBackingCFBam().getTableIndexTweak().readAllDerived(null);
+		if (indexTweakResults == null) {
+			messages.append("Erroneously retrieved null for ICFBamSchema.getIndexTweakTable().readAllDerived(null)\n");
+		}
+		else {
+			messages.append("Retrieved " + indexTweakResults.length + " entities from CFBam.IndexTweak\n");
+		}
+
 		ICFBamValue[] valueResults = ICFBamSchema.getBackingCFBam().getTableValue().readAllDerived(null);
 		if (valueResults == null) {
 			messages.append("Erroneously retrieved null for ICFBamSchema.getValueTable().readAllDerived(null)\n");
