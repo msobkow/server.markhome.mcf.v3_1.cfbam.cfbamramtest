@@ -1198,6 +1198,22 @@ public class CFBamRamTestTestSchema {
 			messages.append("Retrieved " + uuid6GenResults.length + " entities from CFBam.Uuid6Gen\n");
 		}
 
+		ICFBamRoleDef[] roleDefResults = ICFBamSchema.getBackingCFBam().getTableRoleDef().readAllDerived(null);
+		if (roleDefResults == null) {
+			messages.append("Erroneously retrieved null for ICFBamSchema.getRoleDefTable().readAllDerived(null)\n");
+		}
+		else {
+			messages.append("Retrieved " + roleDefResults.length + " entities from CFBam.RoleDef\n");
+		}
+
+		ICFBamSchemaRole[] schemaRoleResults = ICFBamSchema.getBackingCFBam().getTableSchemaRole().readAllDerived(null);
+		if (schemaRoleResults == null) {
+			messages.append("Erroneously retrieved null for ICFBamSchema.getSchemaRoleTable().readAllDerived(null)\n");
+		}
+		else {
+			messages.append("Retrieved " + schemaRoleResults.length + " entities from CFBam.SchemaRole\n");
+		}
+
 		messages.append("CFBam tests complete\n");
 		return( messages.toString() );
 	}
