@@ -84,7 +84,7 @@ public class CFBamRamTestStartupListener {
 		ICFIntSchema.getBackingCFInt().wireTableTableInstances();
 		ICFBamSchema.getBackingCFBam().wireTableTableInstances();
 
-		ICFBamSchema.getBackingCFBam().bootstrapSchema(ICFBamSchema.getConsolidatedTableInfo());
+		ICFBamSchema.getBackingCFBam().bootstrapSchema(ICFBamSchema.getConsolidatedTableData());
 
         System.err.println("Executing testCFSec.performTests()");
         try {
